@@ -1,0 +1,193 @@
+I, [2015-03-18T15:56:23.070059 #14088]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-18T15:56:23.962149 #14088]  INFO -- Kitchen: -----> Creating <default-centos65>...
+E, [2015-03-18T15:56:27.108463 #14088] ERROR -- Kitchen: ------Exception-------
+E, [2015-03-18T15:56:27.108463 #14088] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-03-18T15:56:27.108463 #14088] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: 
+STDERR: Vagrant failed to initialize at a very early stage:
+
+Vagrant is attempting to interface with the UI in a way that requires
+a TTY. Most actions in Vagrant that require a TTY have configuration
+switches to disable this requirement. Please do that or run Vagrant
+with TTY.
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: 
+STDERR: Vagrant failed to initialize at a very early stage:
+
+Vagrant is attempting to interface with the UI in a way that requires
+a TTY. Most actions in Vagrant that require a TTY have configuration
+switches to disable this requirement. Please do that or run Vagrant
+with TTY.
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `call'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-18T15:56:27.109463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-03-18T15:56:27.110463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-18T15:56:27.110463 #14088] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-18T15:56:27.110463 #14088] ERROR -- Kitchen: ----------------------
+I, [2015-03-18T16:03:27.031451 #30396]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-18T16:03:27.924541 #30396]  INFO -- Kitchen: -----> Creating <default-centos65>...
+E, [2015-03-18T16:03:30.231771 #30396] ERROR -- Kitchen: ------Exception-------
+E, [2015-03-18T16:03:30.231771 #30396] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-03-18T16:03:30.231771 #30396] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: 
+STDERR: Vagrant failed to initialize at a very early stage:
+
+Vagrant is attempting to interface with the UI in a way that requires
+a TTY. Most actions in Vagrant that require a TTY have configuration
+switches to disable this requirement. Please do that or run Vagrant
+with TTY.
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: 
+STDERR: Vagrant failed to initialize at a very early stage:
+
+Vagrant is attempting to interface with the UI in a way that requires
+a TTY. Most actions in Vagrant that require a TTY have configuration
+switches to disable this requirement. Please do that or run Vagrant
+with TTY.
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `call'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-18T16:03:30.232771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-18T16:03:30.233771 #30396] ERROR -- Kitchen: ----------------------
+I, [2015-03-18T17:15:34.320960 #31576]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-18T17:15:35.242644 #31576]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-03-18T17:15:49.361967 #31576]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-18T17:17:41.708932 #31576]  INFO -- Kitchen: -----> Kitchen is finished. (2m7.39s)
+I, [2015-03-18T17:38:59.384416 #29680]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-18T17:39:00.302600 #29680]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-18T17:39:59.360409 #29680]  INFO -- Kitchen: -----> Kitchen is finished. (0m59.98s)
+I, [2015-03-18T17:46:34.647450 #32352]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-18T17:46:35.566634 #32352]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-18T17:46:42.106942 #32352]  INFO -- Kitchen: -----> Kitchen is finished. (0m7.46s)
+I, [2015-03-18T17:51:10.198550 #31364]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-18T17:51:11.117733 #31364]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-18T17:51:17.992108 #31364]  INFO -- Kitchen: -----> Kitchen is finished. (0m7.79s)
+I, [2015-03-18T18:46:41.555384 #29916]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-18T18:46:42.437060 #29916]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-18T18:46:49.073887 #29916]  INFO -- Kitchen: -----> Kitchen is finished. (0m7.52s)
+I, [2015-03-20T04:50:19.544562 #35156]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-03-20T04:50:19.616077 #35156] ERROR -- Kitchen: ------Exception-------
+E, [2015-03-20T04:50:19.616577 #35156] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-03-20T04:50:19.616577 #35156] ERROR -- Kitchen: Message: Error parsing C:/Users/Cedric/git/learningchef/apache/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-03-20T04:50:19.616577 #35156] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-03-20T04:50:19.616577 #35156] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-03-20T04:50:19.616577 #35156] ERROR -- Kitchen: Message: (<unknown>): did not find expected ',' or ']' while parsing a flow sequence at line 14 column 11
+E, [2015-03-20T04:50:19.616577 #35156] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-03-20T04:50:19.616577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-03-20T04:50:19.616577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:139:in `data'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:118:in `suites'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:104:in `instances'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-03-20T04:50:19.617077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-03-20T04:50:19.617577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-03-20T04:50:19.617577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2015-03-20T04:50:19.617577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-03-20T04:50:19.617577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-03-20T04:50:19.617577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-03-20T04:50:19.617577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-03-20T04:50:19.617577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-03-20T04:50:19.617577 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-03-20T04:50:19.618077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-03-20T04:50:19.618077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-03-20T04:50:19.618077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-03-20T04:50:19.618077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-03-20T04:50:19.618077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-03-20T04:50:19.618077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/bin/kitchen:23:in `load'
+E, [2015-03-20T04:50:19.618077 #35156] ERROR -- Kitchen: C:/opscode/chef/embedded/bin/kitchen:23:in `<main>'
+E, [2015-03-20T04:50:19.618077 #35156] ERROR -- Kitchen: ----------------------
+I, [2015-03-20T04:51:53.933436 #35568]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-20T04:51:55.151680 #35568]  INFO -- Kitchen: -----> Destroying <default-centos65>...
+I, [2015-03-20T04:52:08.301082 #35568]  INFO -- Kitchen: -----> Kitchen is finished. (0m14.37s)
+I, [2015-03-20T04:57:40.763325 #33312]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-20T04:57:41.674416 #33312]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-03-20T04:59:27.809059 #33312]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-20T05:01:47.610014 #33312]  INFO -- Kitchen: -----> Kitchen is finished. (4m6.85s)
+I, [2015-03-20T05:11:31.740317 #35740]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-20T05:11:32.707010 #35740]  INFO -- Kitchen: -----> Destroying <default-centos65>...
+I, [2015-03-20T05:11:46.593532 #35740]  INFO -- Kitchen: -----> Kitchen is finished. (0m14.85s)
+I, [2015-03-20T08:54:46.270619 #37096]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-20T08:54:47.220714 #37096]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-03-20T08:56:11.962116 #37096]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-20T09:05:55.244249 #37096]  INFO -- Kitchen: -----> Kitchen is finished. (11m8.97s)
+I, [2015-03-21T18:39:38.257190 #38512]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-21T18:39:39.349409 #38512]  INFO -- Kitchen: -----> Destroying <default-centos65>...
+I, [2015-03-21T18:39:59.616226 #38512]  INFO -- Kitchen: -----> Kitchen is finished. (0m21.33s)
+I, [2015-03-21T21:56:21.421348 #9920]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-03-21T21:56:22.287348 #9920] ERROR -- Kitchen: 
+No instances for regex `default-centos-65', try running `kitchen list'
+
+
+I, [2015-03-21T21:56:47.364348 #10508]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-21T21:56:48.086348 #10508]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-03-21T21:58:02.407848 #10508]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-21T22:00:11.865746 #10508]  INFO -- Kitchen: -----> Kitchen is finished. (3m24.50s)
+I, [2015-03-22T01:22:00.822378 #184]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-22T01:22:01.618038 #184]  INFO -- Kitchen: -----> Destroying <default-centos65>...
+I, [2015-03-22T01:22:14.081802 #184]  INFO -- Kitchen: -----> Kitchen is finished. (0m13.26s)
+I, [2015-03-22T01:24:07.956188 #3752]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-22T01:24:08.711264 #3752]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-03-22T01:25:19.600560 #3752]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-22T01:27:29.453025 #3752]  INFO -- Kitchen: -----> Kitchen is finished. (3m21.50s)
+I, [2015-03-22T01:28:38.849401 #9736]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-22T01:28:39.666565 #9736]  INFO -- Kitchen: -----> Destroying <default-centos65>...
+I, [2015-03-22T01:28:52.083320 #9736]  INFO -- Kitchen: -----> Kitchen is finished. (0m13.23s)
